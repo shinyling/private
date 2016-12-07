@@ -1,6 +1,10 @@
 
 #####有Vue和Vux方面的问题可以共同探讨和学习，Vue的移动端项目可以关注微信公众号：猪猪的神奇外卖或猪猪集市，现在还是在主攻Android，有Android好的建议或问题也欢迎探讨！Arlen 736008081
-
+![takeoutH5_Splash](./screen/splash.png)
+![takeoutH5_Home](./screen/home.png)
+![takeoutH5_Seller](./screen/seller.png)
+![takeoutH5_Account](./screen/account.png)
+![takeoutH5_Detail](./screen/detail.png)
 #####下面是具体的配置：
 
 ##### 环境
