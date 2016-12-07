@@ -3,7 +3,7 @@
   @pulldown:loading="refresh" :pulldown-config="pulldownConfig"
   :pullup-config="pullupConfig" @pullup:loading="loadMore" v-ref:scrollercont>
     <div style="padding-bottom: 2.4rem;">
-      <div v-for="i in n" class="clear-both" @click="">
+      <div v-for="i in n" class="clear-both" @click="itemClick">
         <div class="line-space"></div>
         <div class="main-content">
           <p>
@@ -93,11 +93,39 @@ export default {
   methods: {
 
     requestData:function(item){
-      console.log('testasdf');
+      //替换成自己的网络请求就好了
+      // var orderUrl = '';
+      // this.lastIndex = index;
+      //   this.loading.show = true; 
+      //   this.$http.get(url+orderUrl,this.search==''?{status:this.trateState,limit:this.itemsPerLoad,page:this.lastIndex}:{search:this.search,limit:this.itemsPerLoad,page:this.lastIndex})
+      //       .then(function(res) {
+      //          this.loading.show = false;
+      //           if(res.data.data.data.length>0){
+      //             this.noItem = true;
+      //             if(this.lastIndex == 1){
+      //               this.list = [];
+      //             }
+      //             for(var i = 0;i<res.data.data.data.length;i++){
+      //                 this.list.push(res.data.data.data[i]);
+      //             }
+
+      //             if(!res.data.data.hasNext){
+      //               this.$broadcast('pullup:disable', this.$refs.scroller.uuid);
+      //             }else{
+      //               this.$broadcast('pullup:enable', this.$refs.scroller.uuid);
+      //             }
+      //             this.$nextTick(() => {
+      //                 this.$refs.scroller.reset()
+      //             })
+      //            }else{
+      //             if(this.lastIndex == 1){
+      //               this.noItem = false;
+      //             }
+      //            }
+      //         })
     },
 
     itemClick:function(id){
-      console.log(id);
       this.$route.router.go({path:"/order/detail",query:{
         id:id,
       }

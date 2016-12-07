@@ -36,6 +36,9 @@ export default function (router) {
     },
     '/account':{
       component:require('./views/dealer/home/account') //个人中心
+    },
+    '/order/detail':{
+      component:require('./views/dealer/order/detail') //订单详情
     }
   })
 
