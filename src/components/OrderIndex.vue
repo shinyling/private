@@ -63,7 +63,7 @@ export default {
 
   data () {
     return {
-      n: 20,
+      n: 5,
       n1: 10,
       pullupConfig:{
           content: '上拉加载',

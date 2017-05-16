@@ -1,15 +1,12 @@
 <template>
   <div class="loader">
-  <img src="../assets/img/start.png">
   </div>
 </template>
 
 <script>
 export default {
   ready () {
-    setTimeout(() => {
       this.$route.router.go({path: '/seller', replace: true})
-    }, 1500)
   }
 }
 </script>
